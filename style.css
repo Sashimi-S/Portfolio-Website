@@ -1,74 +1,62 @@
 
 html, body {
-    height: 100%; /* Ensures the body takes up the full height of the viewport */
-}
+    height: 100%; /* Ensures the body takes up the full height of the viewport */}
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 
 body {
     font-family: Arial, sans-serif;
     background-color: #dedede;
-    color: #333
-}
+    color: #333}
 
 /* HEADER & NAV BAR CONTAINER */
 header {
     background-color: #001673; 
     width: 100%; /* Spans right across the screen */
     padding: 1rem 0;
-}
+    position: relative;
+    z-index: 100;}
 
 /* This keeps content centered but the background spans full width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
+    padding: 0 20px;}
 
 .navbar {
     display: flex;       /* Makes the items sit in a row */
     justify-content: space-between; /* Logo on left, links on right */
-    align-items: center; 
-}
+    align-items: center; }
 
 /* 3. NAVIGATION LINKS */
 .nav-menu {
     display: flex;      
     gap: 90px;           /* Space between links */
-    list-style: none;    /* Removes the bullet points */
-}
+    list-style: none;    /* Removes the bullet points */}
 
 .nav-link {
     text-decoration: none; /* Removes the underline */
     color: #ffffff;           
     font-size: 1.1rem;
     font-weight: 900;
-    text-shadow: 0 0 5px #ef00f8, 0 0 10px #ef00f8, 0 0 20px #ef00f8; /* Neon glow effect */
-    
-    
-}
+    text-shadow: 0 0 5px #ef00f8, 0 0 10px #ef00f8, 0 0 20px #ef00f8; /* Neon glow effect */}
 
 /* 4. HAMBURGER MENU */
 .hamburger {
     display: none;
-    cursor: pointer;
-}
+    cursor: pointer;}
 
 .bar {
     display: block;
     width: 25px;
     height: 5px;
     margin: 5px auto;
-    background-color: #ffffff; /* Hamburger bar */
-}
+    background-color: #ffffff; /* Hamburger bar */}
     
-
-
-/* --- RESPONSIVE DESIGN (Mobile & Tablet) --- */
+/* RESPONSIVE DESIGN (Mobile & Tablet)*/
 @media screen and (max-width: 768px) {
     
     /* Zommed in nav menu  */
@@ -83,6 +71,7 @@ header {
         transition: 0.3s; /* Makes it slide in nicely */
         box-shadow: 0 10px 27px rgba(0,0,0,0.05);
         opacity: 0.95;  /* Slightly transparent for a modern look */
+        z-index: 101;
     }
 
     /* Show the hamburger icon */
@@ -93,5 +82,76 @@ header {
     /* This class will be added via JavaScript later to show the menu */
     .nav-menu.active {
         left: 0;
+    }
+}
+
+/*HERO SECTION */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);/* Full viewport height minus header height */
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding: 1.5rem 0;
+         
+    }
+   
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.hero-image-wrapper { 
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 21px;
+    box-shadow: 0 100px 100px rgba(0, 81, 255, 0.12);
+}
+
+.download-cv-button {
+    position: absolute;
+    top: 54.5%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 280px;
+    max-width: 42%;
+    text-decoration: none;
+}
+
+.download-cv-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.25s ease;
+}
+
+.download-cv-button:hover .download-cv-image {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .download-cv-button {
+        top: 55%;
+        left: 29%;
+        right: auto;
+        width: 200px;
     }
 }
