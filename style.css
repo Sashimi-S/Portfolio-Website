@@ -20,7 +20,6 @@ header {
     position: relative;
     z-index: 100;}
 
-/* This keeps content centered but the background spans full width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -31,6 +30,7 @@ header {
     justify-content: space-between; /* Logo on left, links on right */
     align-items: center; }
 
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
 /* 3. NAVIGATION LINKS */
 .nav-menu {
     display: flex;      
@@ -84,7 +84,7 @@ header {
         left: 0;
     }
 }
-
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
 /*HERO SECTION */
 .hero-section {
     display: flex;
@@ -99,8 +99,7 @@ header {
 @media screen and (max-width: 768px) {
     .hero-section {
         min-height: auto;
-        padding: 1.5rem 0;
-         
+        padding: 1.5rem 0;  
     }
    
 }
