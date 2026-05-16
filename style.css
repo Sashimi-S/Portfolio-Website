@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dedede;
+}
+
+/* HEADER & NAV BAR CONTAINER */
+header {
+    background-color: #001673; 
+    width: 100%; /* Spans right across the screen */
+    padding: 1rem 0;
+}
+
+/* This keeps content centered but the background spans full width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;       /* Makes the items sit in a row */
+    justify-content: space-between; /* Logo on left, links on right */
+    align-items: center; 
+}
+
+/* 3. NAVIGATION LINKS */
+.nav-menu {
+    display: flex;      
+    gap: 90px;           /* Space between links */
+    list-style: none;    /* Removes the bullet points */
+}
+
+.nav-link {
+    text-decoration: none; /* Removes the underline */
+    color: #ffffff;           
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-shadow: 0 0 5px #ef00f8, 0 0 10px #ef00f8, 0 0 20px #ef00f8; /* Neon glow effect */
+    
+    
+}
+
+/* 4. HAMBURGER MENU */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 5px auto;
+    background-color: #ffffff; /* Hamburger bar */
+}
+    
+
+
+/* --- RESPONSIVE DESIGN (Mobile & Tablet) --- */
+@media screen and (max-width: 768px) {
+    
+    /* Zommed in nav menu  */
+    .nav-menu {
+        position: fixed;
+        left: -100%; /* Hides it off the left side of the screen */
+        top: 5rem;
+        flex-direction: column;
+        background-color: #000564;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s; /* Makes it slide in nicely */
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+        opacity: 0.95;  /* Slightly transparent for a modern look */
+    }
+
+    /* Show the hamburger icon */
+    .hamburger {
+        display: block;
+    }
+
+    /* This class will be added via JavaScript later to show the menu */
+    .nav-menu.active {
+        left: 0;
+    }
+}
