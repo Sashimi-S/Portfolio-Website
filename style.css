@@ -44,12 +44,7 @@ header {
     font-weight: 900;
     text-shadow: 0 0 5px #ef00f8, 0 0 10px #ef00f8, 0 0 20px #ef00f8; /* Neon glow effect */}
 
-    /* Adds a bit of spacing between letters */
     
-
-    
-    
-
 /* 4. HAMBURGER MENU */
 .hamburger {
     display: none;
@@ -164,11 +159,10 @@ header {
 /* FORM STYLING */
 .contact-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 721px;
     margin: 0 auto;
     padding: 2rem;
     background-color: #001673; 
-    color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     margin-top: 25px;
@@ -184,7 +178,7 @@ header {
 }
 
 .form-group {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 }
 
 input, textarea { /* Styles for both input and textarea fields */
@@ -226,3 +220,40 @@ button:hover {
     background-color:#e9005d;
     color: #ffffff;
 }
+
+/*///////////////////////////////////// Formatting paragraph on index.htm////////////////////////////////////////////////////////////*/
+.description {
+    max-width: 900px;
+    margin: 20px auto ;
+    
+    padding: 30px 30px;
+    /* Add spacing after paragraph */
+    margin-bottom: 30px;
+    font-size: 25px;
+    
+    font-weight: 300;
+    line-height: 1.7;
+    color: #ffffff;
+    text-align: center;
+    
+    border: 7px solid;
+    border-color: #ff0099;
+    border-radius: 100px;
+    
+    background-color: #001673;
+    text-shadow: 0 0 2px #00ccff, 0 0 5px #00ccff, 0 0 5px #00ccff; /* Neon glow effect */
+    
+    /* responsive mobile*/
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+        padding: 20px 20px;
+        border-radius: 50px;
+
+    }
+}
+    
+    
+
+
+    
+
