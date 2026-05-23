@@ -163,46 +163,46 @@ header {
 /*///////////////////////////////////// Formatting paragraph on index.htm////////////////////////////////////////////////////////////*/
 .description {
     max-width: 970px;
-    margin: 20px auto ;
-    
-    padding: 30px 30px;
-    /* Add spacing after paragraph */
+    margin: 20px auto;
+    padding: 30px;
     margin-bottom: 30px;
     font-size: 25px;
-    
     font-weight: 300;
     line-height: 1.7;
     color: #ffffff;
     text-align: center;
-    
-    border: 10px solid;
-    border-color: #ff0099;
+    border: 10px solid #ff0099;
     border-radius: 100px;
-    
     background-color: #001673;
-    
-    text-shadow: 0 0 2px #00ccff, 0 0 5px #00ccff, 0 0 5px #00ccff; /* Neon glow effect */
-    .description:hover {
-        text-shadow: 0 0 5px #00fff2, 0 0 10px #00fff2, 0 0 20px #00fff2; /* Stronger neon glow on hover */
-        box-shadow: #e9005d 0px 0px 10px, #e9005d 0px 0px 20px, #e9005d 0px 0px 30px; /* Adds a pink glow around the paragraph on hover */
-    }
-    
-    /* responsive mobile*/
-    @media screen and (max-width: 768px) {
-        font-size: 15px;
-        padding: 20px 20px;
-        border-radius: 50px;
-    }
+    text-shadow: 0 0 2px #00ccff, 0 0 5px #00ccff, 0 0 5px #00ccff;
+}
 
-    /* responsive tablet */
-    @media screen and (max-width: 1024px) {
+.description:hover {
+    
+    box-shadow: #e9005d 0px 0px 10px, #e9005d 0px 0px 20px, #e9005d 0px 0px 30px;
+    text-shadow: 0 0 7px #00ccff, 0 0 5px #00ccff, 0 0 5px #00ccff; /* Neon glow effect on hover */
+}
+
+@media screen and (max-width: 1024px) {
+    .description {
+        max-width: 90%;
         font-size: 20px;
-        padding: 25px 25px;
+        padding: 25px;
         border-radius: 70px;
+        border-width: 5px;
+        text-shadow: 0 0 2px #00ccff, 0 0 5px #00ccff; /* Slightly reduced glow for smaller screens */
     }
 }
-    
-    
+
+@media screen and (max-width: 768px) {
+    .description {
+        max-width: 95%;
+        font-size: 15px;
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
+
 /* ////////////////////////////////////////////////////////////////////////// */
 /* FORM STYLING */
 .contact-container {
@@ -277,7 +277,7 @@ button:hover {
     color: #ffffff;
 }
 
-
+/* /////////////////////////////////////Skills Section Styling////////////////////////////////////////////////////////////// */
 .work-main h2{
 
     font-weight: 1000px;
@@ -289,8 +289,8 @@ button:hover {
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
     
-    text-shadow: 0 0 3px #9900ff, 0 0 5px #9900ff, 0 0 10px #9900ff; /* Neon glow effect */
-     -webkit-text-stroke: #000000 2.5px; /* Adds a thin black outline to the text for better visibility */
+    text-shadow: 0 0 10px #04003f, 0 0 10px #04003f, 0 0 20px #04003f; /* Neon glow effect */
+     -webkit-text-stroke: #000000 0.5px; /* Adds a thin black outline to the text for better visibility */
 
     padding: 12px 16px;
 
@@ -300,8 +300,6 @@ button:hover {
     border-width: 3px;
     
 }
-
-
 
 .skills-list ul {
     display: flex;
@@ -319,6 +317,7 @@ button:hover {
     padding: 30px 70px 30px 70px;
     border-radius: 25px; 
     border: 5px solid #00ffc8;
+    margin-bottom: 70px;
     
 }
 
@@ -337,8 +336,137 @@ button:hover {
     font-weight: 700;
     
     font-size: 25px;
-    color: #00fff2;
-    
+    color: #00fff2;   
 }
     
 
+/* /////////////////////////////////////Work Processes Section Styling////////////////////////////////////////////////////////////// */
+.work-processes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 70px;
+}
+
+.work-processes h3 {
+    align-items: center;
+
+}
+
+.process-number{
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: #00ffc8;
+    /*-webkit-text-stroke: #000000 1px; /* Adds a thin black outline to the text for better visibility */
+    align-items: center;
+}
+
+.process-title{
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: #ef00f8;
+    /*-webkit-text-stroke: #000000 1px; /* Adds a thin black outline to the text for better visibility */
+    align-items: center;
+}
+
+.work-processes-card{
+    background-color: #001673;
+    padding: 30px;
+    border-radius: 15px;
+    border: 5px solid #00ffc8;
+    width: 350px;
+    height: 270px;
+    text-align: center;
+}
+
+.work-processes-card h4{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #00fff2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) { /* Tablet view */
+    .work-main h2 {
+        font-size: 2.2 rem;
+    }
+    .work-processes-container {
+        gap: 5%;
+    }
+    .work-processes h2 {
+        font-size: 2.2 rem;
+    }
+    .work-processes h3,
+    .process-number,
+    .process-title {
+        font-size: 2rem;
+    }
+
+    .work-processes-card {
+        width: 320px;
+        padding: 25px;
+    }
+
+    .work-processes-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .workstation-image {
+        max-width: 90%;
+        height: auto;
+    }
+
+    
+}
+
+@media (max-width: 768px) { /* Mobile view */
+    .work-main h2 {
+        font-size: 2rem;
+    }
+    .work-processes-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .work-processes-card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+    .work-processes h2 {
+        font-size: 2rem;
+    }
+
+    .work-processes h3,
+    .process-number,
+    .process-title {
+        font-size: 1.8rem;
+    }
+
+    .work-processes-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .workstation-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* make the skills list text a  bit smaller and the padding smaller */
+    .skills-list ul {
+        padding: 20px 50px;
+    }
+}
+        
+/* /////////////////////////////////////Workstation Section Styling////////////////////////////////////////////////////////////// */    
+.workstation-image {
+   
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    display: block;
+}
