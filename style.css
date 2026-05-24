@@ -203,7 +203,9 @@ header {
     }
 }
 
-/* ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 /* FORM STYLING */
 .contact-container {
     width: 100%;
@@ -279,7 +281,6 @@ button:hover {
 
 /* /////////////////////////////////////Skills Section Styling////////////////////////////////////////////////////////////// */
 .work-main h2{
-
     font-weight: 1000px;
     font-weight: bold;
     text-align: center;
@@ -297,8 +298,7 @@ button:hover {
     border-bottom: 3px solid #001673;
     width: fit-content; /* Shrinks the width to fit the content */
     margin: 0 auto 30px; /* Centers the heading and adds space below */
-    border-width: 3px;
-    
+    border-width: 3px;   
 }
 
 .skills-list ul {
@@ -339,7 +339,6 @@ button:hover {
     color: #00fff2;   
 }
     
-
 /* /////////////////////////////////////Work Processes Section Styling////////////////////////////////////////////////////////////// */
 .work-processes-container {
     display: flex;
@@ -418,8 +417,6 @@ button:hover {
         max-width: 90%;
         height: auto;
     }
-
-    
 }
 
 @media (max-width: 768px) { /* Mobile view */
@@ -470,3 +467,94 @@ button:hover {
     height: auto;
     display: block;
 }
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+ /*   ///////////////////////Gallery Styling//////////////////////////////// */
+
+.gallery-main h1{
+    font-weight: 1000px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    
+    color: #00ffc8;
+    font-size: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    text-shadow: 0 0 10px #04003f, 0 0 10px #04003f, 0 0 20px #04003f; /* Neon glow effect */
+     -webkit-text-stroke: #000000 0.5px; /* Adds a thin black outline to the text for better visibility */
+    padding: 18px 16px;
+
+    border-bottom: 3px solid #001673;
+    width: fit-content; /* Shrinks the width to fit the content */
+    margin: 0 auto 30px; /* Centers the heading and adds space below */
+    border-width: 3px;   
+}
+
+.gallery-main h2{
+    font-weight: 700;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    text-shadow: 0 0 5px #9400cf, 0 0 5px #9400cf, 0 0 10px #9400cf; /* Neon glow effect */
+     -webkit-text-stroke: #000000 1px; /* Adds a thin black outline to the text for better visibility */
+
+    padding: 7px 16px;
+    
+    border-bottom: 3px solid #001673;
+    width: fit-content; /* Shrinks the width to fit the content */
+    margin: 0 auto 30px; /* Centers the heading and adds space below */
+    border-width: 3px;   
+}
+
+.advertisements {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+.advertisement-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+   
+}
+
+.advertisement-image {
+    flex: 1 1 calc(25% - 1.5rem); 
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    object-fit: contain; 
+    border-radius: 7px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);  
+}
+
+@media screen and (max-width: 1024px) {
+    .advertisement-image {
+        flex: 1 1 calc(25% - 1.5rem);
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advertisement-grid {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .advertisement-image {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: 48%;
+    }
+}
+ 
