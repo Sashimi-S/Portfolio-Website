@@ -522,7 +522,7 @@ button:hover {
     font-size: 2.2rem;
     font-family: Arial, Helvetica, sans-serif;
     
-    text-shadow: 0 0 10px #04003f, 0 0 10px #04003f, 0 0 20px #04003f; /* Neon glow effect */
+    text-shadow: 0 0 10px #04003f, 0 0 10px #04003f, 0 0 20px #04003f; 
      -webkit-text-stroke: #000000 0.5px; /* Adds a thin black outline to the text for better visibility */
     padding: 18px 16px;
 
@@ -537,12 +537,13 @@ button:hover {
     font-weight: bold;
     text-align: center;
     margin-bottom: 25px;
+    margin-top: 25px;
     
     color: #ffffff;
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     
-    text-shadow: 0 0 5px #9400cf, 0 0 5px #9400cf, 0 0 10px #9400cf; /* Neon glow effect */
+    text-shadow: 0 0 5px #9400cf, 0 0 5px #9400cf, 0 0 10px #9400cf; 
      -webkit-text-stroke: #000000 1px; /* Adds a thin black outline to the text for better visibility */
 
     padding: 7px 16px;
@@ -553,11 +554,40 @@ button:hover {
     border-width: 3px;   
 }
 
+/* /////////////////////////////////////Logo Section Styling////////////////////////////////////////////////////////////// */
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 70px;
+ 
+}
+
+.logo-image {
+    flex: 1 1 calc(25% - 1.5rem); 
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;  
+    border-radius: 70px;
+    border: 3px solid #001673;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease; 
+
+}
+
+.logo-image:hover {
+    transform: scale(1.05); 
+}
+/* /////////////////////////////////////Advertisements Section Styling////////////////////////////////////////////////////////////// */
+
 .advertisements {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem 2rem;
+    margin-bottom: 50px;
 }
 
 .advertisement-grid {
@@ -565,7 +595,6 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-   
 }
 
 .advertisement-image {
@@ -575,8 +604,14 @@ button:hover {
     height: auto;
     object-fit: contain; 
     border-radius: 7px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);  
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease; 
 }
+
+.advertisement-image:hover {
+    transform: scale(1.05); 
+}
+
 
 @media screen and (max-width: 1024px) {
     .advertisement-image {
@@ -596,4 +631,105 @@ button:hover {
         max-width: 48%;
     }
 }
+
+/* /////////////////////////////////////Social Media Management Section Styling////////////////////////////////////////////////////////////// */
+
+.smm {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+
+
+.smm-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.hss-grid, 
+.kali-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 2px solid #001673
+}
+
+.hss-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.kali-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sub-title {
+    grid-column: 1 / -1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #001673;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+    /* text-shadow: 0 0 10px #04003f, 0 0 10px #04003f; */
+}
+
+.smm-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.smm-image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .smm-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hss-grid,
+    .kali-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .sub-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .smm > h2 {
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    .smm-container {
+        gap: 20px;
+    }
+
+    .hss-grid,
+    .kali-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .sub-title {
+        font-size: 1.1rem;
+    }
+}
+
  
