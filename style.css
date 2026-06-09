@@ -81,9 +81,9 @@ header {
         background-color: #000564;
         width: 100%;
         text-align: center;
-        transition: 0.3s; /* Makes it slide in nicely */
+        transition: 0.3s; /* Makes it slide in */
         box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-        opacity: 0.95;  /* Slightly transparent for a modern look */
+        opacity: 0.95;  
         z-index: 100;
         padding: 2rem 0; 
     }
@@ -366,7 +366,6 @@ button:hover {
     font-size: 2.5rem;
     font-weight: 1000;
     color: #00ffc8;
-    /*-webkit-text-stroke: #000000 1px; /* Adds a thin black outline to the text for better visibility */
     align-items: center;
 }
 
@@ -374,7 +373,6 @@ button:hover {
     font-size: 2.5rem;
     font-weight: 1000;
     color: #ef00f8;
-    /*-webkit-text-stroke: #000000 1px; /* Adds a thin black outline to the text for better visibility */
     align-items: center;
 }
 
@@ -469,7 +467,6 @@ button:hover {
         
 /* /////////////////////////////////////Workstation Section Styling////////////////////////////////////////////////////////////// */    
 .workstation-image {
-   
     margin: 0 auto;
     width: auto;
     height: auto;
@@ -569,7 +566,6 @@ button:hover {
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 70px;
- 
 }
 
 .logo-image {
@@ -582,7 +578,6 @@ button:hover {
     border: 3px solid #001673;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
     transition: transform 0.2s ease; 
-
 }
 
 .logo-image:hover {
@@ -825,3 +820,107 @@ button:hover {
     height: auto;
     object-fit: contain;
 } */
+
+
+/* /////////////////////////////////////Community Section Styling////////////////////////////////////////////////////////////// */
+.community-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+    border: 5px solid #001673;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #001673;
+}
+.com-title{       
+    color: #00ffc8;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    text-shadow: 0 0 10px #04003f, 0 0 10px #04003f, 0 0 20px #04003f; 
+     -webkit-text-stroke: #000000 0.5px; /* Adds a thin black outline to the text for better visibility */
+    padding: 18px 16px;
+
+    border-bottom: 3px solid #001673;
+    width: fit-content; /* Shrinks the width to fit the content */
+    margin: 0 auto 30px; /* Centers the heading and adds space below */
+    border-width: 3px;   
+}
+
+/* Format h2 elements in the community section */
+.community-container h2 {
+    font-weight: 700;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+    color:hsl(299, 100%, 55%);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    /* text-shadow: 0 0 5px #9400cf, 0 0 5px #9400cf, 0 0 10px #9400cf; 
+     -webkit-text-stroke: #000000 1px; Adds a thin black outline to the text for better visibility */
+
+    padding: 7px 16px;
+    
+    border-bottom: 3px solid #001673;
+    width: fit-content; /* Shrinks the width to fit the content */
+    margin: 0 auto 30px; /* Centers the heading and adds space below */
+    border-width: 3px;
+}
+
+/* Format the list in community section */
+.community-container ul {
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 50px;
+    background-color: #001673;
+    border-radius: 25px; 
+    border: 5px solid #00ffc8;
+    margin-bottom: 70px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .community-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 20px;
+        border-width: 3px;
+    }
+
+    .com-title {
+        font-size: 2rem;
+        padding: 12px 10px;
+        margin-bottom: 20px;
+    }
+
+    .community-container h2 {
+        font-size: 1.6rem;
+        padding: 6px 10px;
+        margin: 16px auto 20px;
+    }
+
+    .community-container ul {
+        padding: 18px 18px;
+        gap: 12px;
+        margin-bottom: 40px;
+        align-items: stretch;
+    }
+
+    .community-container ul li {
+        width: 100%;
+        text-align: left;
+    }
+}
+
