@@ -237,10 +237,6 @@ header {
     border-radius: 70px;
     border: #ef00f8 2px solid;
     
-    
-    
-  /* -webkit-text-stroke: #000000 2px; /* Adds a thin black outline to the text for better visibility 
-    text-shadow: 0 0 5px #ef00f8, 0 0 10px #ef00f8, 0 0 20px #ef00f8;  Neon glow effect */
 }
 
 .form-group {
@@ -861,11 +857,6 @@ button:hover {
     color:hsl(299, 100%, 55%);
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-    
-    
-    /* text-shadow: 0 0 5px #9400cf, 0 0 5px #9400cf, 0 0 10px #9400cf; 
-     -webkit-text-stroke: #000000 1px; Adds a thin black outline to the text for better visibility */
-
     padding: 7px 16px;
     
     border-bottom: 3px solid #001673;
@@ -924,3 +915,14 @@ button:hover {
     }
 }
 
+/* /////////////////////////////////////Footer Section Styling////////////////////////////////////////////////////////////// */
+.footer {
+    margin-top: 70px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1rem;
+    
+    border-top: 3px solid #00ffc8;
+}
