@@ -509,8 +509,8 @@ header {
     padding: 7px 16px;
     
     border-bottom: 3px solid #001673;
-    width: fit-content; /* Shrinks the width to fit the content */
-    margin: 0 auto 30px; /* Centers the heading and adds space below */
+    width: fit-content; 
+    margin: 0 auto 30px; 
     border-width: 3px;   
 }
 
@@ -593,7 +593,6 @@ header {
 }
 
 /* /////////////////////////////////////Social Media Management Section Styling////////////////////////////////////////////////////////////// */
-
 .smm {
     width: 100%;
     max-width: 1400px;
@@ -824,7 +823,6 @@ header {
 
 /*// /////////////////////////////////////Video Editing Section Styling////////////////////////////////////////////////////////////// */
 .video-editing-container{
-    /* align the video editing container in the center */
     display: flex;
     justify-content: center;
     align-items: center;
