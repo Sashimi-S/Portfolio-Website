@@ -1,5 +1,5 @@
-html, body {
-    height: 100%; /* Ensures the body takes up the full height of the viewport */}
+html {
+    min-height: 100%;}
 
 * {
     margin: 0;
@@ -7,6 +7,9 @@ html, body {
     box-sizing: border-box;}
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #dedede;
     color: #333}
@@ -97,8 +100,12 @@ header {
 }
 
 /* /////////////////////////////////////Footer Section Styling////////////////////////////////////////////////////////////// */
+body > :has(+ .footer) {
+    margin-bottom: 70px;
+}
+
 .footer {
-    margin-top: 70px;
+    margin-top: auto;
     background-color: #000000;
     color: #ffffff;
     text-align: center;
@@ -471,6 +478,10 @@ header {
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
  /*////////////////////////////////////////////////////Gallery Styling/////////////////////////////////////////////////////////*/
  /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.gallery-main {
+    padding-bottom: 3rem;
+}
 
 .gallery-main h1{
     font-weight: 1000px;
@@ -1107,6 +1118,12 @@ header {
     border-radius: 7px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        margin-top: 77px;
+    }
 }
 
 .contact-container h1{
